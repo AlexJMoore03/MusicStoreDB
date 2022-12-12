@@ -1,0 +1,46 @@
+Alex Moore
+CS 325 - Fall 2022
+8 December 2022
+
+employee(EMPLOYEE_ID, empl_first_name, empl_last_name, salary, hiredate)
+
+reception(RECEPTION_ID, reception_date, duration, employee_id)
+foreign key(employee_id) references employee
+
+reception_artists(RECEPTION_ID, ARTIST)
+foreign key(RECEPTION_ID) references reception
+
+service(SERVICE_ID, employee_id, instrument_id)
+foreign key(employee_id) references employee
+foreign key(instrument_id) references instrument
+
+service_type(SERVICE_ID, SERVICE_TYPE)
+foreign key(SERVICE_ID) references service
+
+instrument(INSTRUMENT_ID, instrument_type, acquisition_date, purchase_price, customer_id)
+foreign key(customer_id) references customer
+
+advanced_instrument(INSTRUMENT_ID)
+foreign key(instrument_id) references instrument
+
+beginner_instrument(INSTRUMENT_ID, rental_price)
+foreign key(instrument_id) references instrument
+
+rental(RENTAL_ID, rental_date, rental_duedate, customer_id, instrument_id)
+foreign key(customer_id) references customer
+foreign key(instrument_id) references beginner_instrument
+
+customer(CUSTOMER_ID, cust_first_name, cust_last_name)
+
+lesson(LESSON_ID, employee_id)
+foreign key(employee_id) references employee
+
+lesson_time(LESSON_ID, LESSON_TIME)
+foreign key(lesson_id) references lesson
+
+lesson_day(LESSON_ID, LESSON_DAY)
+foreign key(lesson_id) references lesson
+
+lesson_taking(LESSON_ID, CUSTOMER_ID)
+foreign key(lesson_id) references lesson
+foreign key(customer_id) references customer
