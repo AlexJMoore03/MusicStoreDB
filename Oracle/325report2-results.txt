@@ -1,0 +1,13 @@
+
+Employees that Teach Lessons                                                                                                                                                                            
+Employee ID Employee Name                                                                                                                                                                               
+----------- ------------------------------------------------------------                                                                                                                                
+         10 TuckerJones                                                                                                                                                                                 
+          2 JohnRose                                                                                                                                                                                    
+          1 AlexMoore                                                                                                                                                                                   
+          4 SusanLennon                                                                                                                                                                                 
+          5 CarlShoemaker                                                                                                                                                                               
+          7 JimBeam                                                                                                                                                                                     
+
+6 rows selected.
+

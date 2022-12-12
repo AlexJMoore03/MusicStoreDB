@@ -1,0 +1,91 @@
+Query 1 Cheapest Instruments
+
+INSTRUMENT_ID INSTRUMENT_TYPE                ACQUISITI PURCHASE_PRICE CUSTOMER_ID                                                                                                                       
+------------- ------------------------------ --------- -------------- -----------                                                                                                                       
+            1 Flute                          12-JAN-22            200           1                                                                                                                       
+            2 Flute                          12-JAN-22            200           2                                                                                                                       
+            3 Flute                          20-SEP-22            150           3                                                                                                                       
+            6 Clarinet                       12-JAN-22            200           7                                                                                                                       
+           12 Flute                          11-JAN-22            150           2                                                                                                                       
+           13 Flute                          01-SEP-22            150           2                                                                                                                       
+           14 Trumpet                        05-DEC-22            100           1                                                                                                                       
+           15 Trumpet                        20-SEP-22            150           3                                                                                                                       
+           16 Clarinet                       05-DEC-22            200                                                                                                                                   
+
+9 rows selected.
+
+Query 2 Average Instrument Prices
+
+INSTRUMENT_TYPE                AVG(PURCHASE_PRICE)                                                                                                                                                      
+------------------------------ -------------------                                                                                                                                                      
+Flute                                   183.333333                                                                                                                                                      
+Saxophone                                      400                                                                                                                                                      
+Trumpet                                      187.5                                                                                                                                                      
+Clarinet                                241.666667                                                                                                                                                      
+
+Query 3 Employees that Teach Lessons
+
+EMPLOYEE_ID EMPL_FIRST_NAME                EMPL_LAST_NAME                                                                                                                                               
+----------- ------------------------------ ------------------------------                                                                                                                               
+          5 Carl                           Shoemaker                                                                                                                                                    
+          7 Jim                            Beam                                                                                                                                                         
+          2 John                           Rose                                                                                                                                                         
+          1 Alex                           Moore                                                                                                                                                        
+          4 Susan                          Lennon                                                                                                                                                       
+         10 Tucker                         Jones                                                                                                                                                        
+
+6 rows selected.
+
+Query 4 Oldest Flutes
+
+INSTRUMENT_ID INSTRUMENT_TYPE                ACQUISITI PURCHASE_PRICE CUSTOMER_ID                                                                                                                       
+------------- ------------------------------ --------- -------------- -----------                                                                                                                       
+            1 Flute                          12-JAN-22            200           1                                                                                                                       
+            2 Flute                          12-JAN-22            200           2                                                                                                                       
+           12 Flute                          11-JAN-22            150           2                                                                                                                       
+
+Query 5 Daily Lessons
+
+ LESSON_ID LESSON_DAY                                                                                                                                                                                   
+---------- ------------------------------                                                                                                                                                               
+        10 Friday                                                                                                                                                                                       
+         3 Monday                                                                                                                                                                                       
+         1 Monday                                                                                                                                                                                       
+         5 Monday                                                                                                                                                                                       
+         7 Monday                                                                                                                                                                                       
+         6 Tuesday                                                                                                                                                                                      
+         8 Tuesday                                                                                                                                                                                      
+         2 Tuesday                                                                                                                                                                                      
+         4 Tuesday                                                                                                                                                                                      
+         9 Wednesday                                                                                                                                                                                    
+
+10 rows selected.
+
+Query 6 Repairs List
+
+SERVICE_ID                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+         1                                                                                                                                                                                              
+         2                                                                                                                                                                                              
+         3                                                                                                                                                                                              
+         5                                                                                                                                                                                              
+         6                                                                                                                                                                                              
+         8                                                                                                                                                                                              
+
+6 rows selected.
+
+Query 7 Current Rentals
+
+ RENTAL_ID RENTAL_DA RENTAL_DU CUSTOMER_ID INSTRUMENT_ID                                                                                                                                                
+---------- --------- --------- ----------- -------------                                                                                                                                                
+         1 05-DEC-22 12-DEC-22           1             4                                                                                                                                                
+         3 05-DEC-22 12-DEC-22           3             7                                                                                                                                                
+         6 06-DEC-22 13-DEC-22           6            11                                                                                                                                                
+         9 05-DEC-22 12-DEC-22           9            18                                                                                                                                                
+
+Query 8 Cheapest Beginner Instrument
+
+INSTRUMENT_ID RENTAL_PRICE                                                                                                                                                                              
+------------- ------------                                                                                                                                                                              
+            8           15                                                                                                                                                                              
+

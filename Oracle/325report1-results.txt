@@ -1,0 +1,9 @@
+
+Average Price for Each Instrument Type                                                                                                                                                                  
+Instrument Type                Average Price                                                                                                                                                            
+------------------------------ -------------                                                                                                                                                            
+Flute                                $183.33                                                                                                                                                            
+Saxophone                            $400.00                                                                                                                                                            
+Trumpet                              $187.50                                                                                                                                                            
+Clarinet                             $241.67                                                                                                                                                            
+
